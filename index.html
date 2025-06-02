@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lời Chúc Thi Tốt Cấp 3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298, #8e44ad, #4a235a);
+            background-size: 1000%;
+            animation: gradient 7s ease infinite;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Hiệu ứng ngôi sao nhấp nháy */
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.5);
+            animation: twinkle 2.5s ease-in-out infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.6); }
+            50% { opacity: 1; transform: scale(1.3); }
+        }
+
+        /* Hiệu ứng hào quang */
+        .glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent);
+            filter: blur(150px);
+            animation: glowMove 12s ease infinite;
+        }
+
+        @keyframes glowMove {
+            0% { transform: translate(0, 0); opacity: 0.5; }
+            50% { transform: translate(200px, -200px); opacity: 0.8; }
+            100% { transform: translate(0, 0); opacity: 0.5; }
+        }
+
+        /* Hiệu ứng phản chiếu ánh sáng */
+        .lens-flare {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+            filter: blur(200px);
+            animation: lensFlare 15s ease infinite;
+        }
+
+        @keyframes lensFlare {
+            0% { transform: translate(-100px, 100px); opacity: 0.3; }
+            50% { transform: translate(100px, -100px); opacity: 0.5; }
+            100% { transform: translate(-100px, 100px); opacity: 0.3; }
+        }
+
+        /* Hiệu ứng laser nhấp nháy */
+        .laser {
+            position: absolute;
+            width: 2px;
+            height: 200vh;
+            background: linear-gradient(transparent, #ffffff, transparent);
+            animation: laserBlink 3s ease-in-out infinite;
+        }
+
+        @keyframes laserBlink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Hiệu ứng tuyết rơi */
+        .snow {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: fallSnow 10s linear infinite;
+        }
+
+        @keyframes fallSnow {
+            0% { transform: translateY(-100vh); opacity: 0.7; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            padding: 70px;
+            border-radius: 35px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(255, 255, 255, 0.4);
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+            animation: slideIn 1.8s ease-out;
+            border: 3px solid rgba(255, 255, 255, 0.7);
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-200px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4.5em;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 25px;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(84, 160, 255, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .subtitle {
+            font-size: 1.8em;
+            font-weight: 400;
+            color: #ffffff;
+            margin-bottom: 45px;
+            line-height: 1.7;
+            text-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 2.8s ease-in;
+        }
+
+        .wish {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 35px 0;
+            padding: 30px;
+            background: linear-gradient(45deg, #ffffff, #f1c40f, #f39c12, #e74c3c, #ffffff);
+            background-size: 500%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            border-radius: 20px;
+            position: relative;
+            transition: all 0.8s ease;
+            animation: textWave 3s ease-in-out infinite alternate;
+            line-height: 1.4;
+            text-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 
+                        0 0 35px rgba(241, 196, 15, 0.7), 
+                        0 0 45px rgba(0, 0, 0, 0.5);
+            -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+        }
+
+        @keyframes textWave {
+            0% { 
+                background-position: 0% 50%;
+                text-shadow: 0 0 25px rgba(255, 255, 255, 0.8), 
+                            0 0 35px rgba(241, 196, 15, 0.7), 
+                            0 0 45px rgba(0, 0, 0, 0.5);
+            }
+            100% { 
+                background-position: 100% 50%;
+                text-shadow: 0 0 35px rgba(255, 255, 255, 1), 
+                            0 0 45px rgba(241, 196, 15, 0.9), 
+                            0 0 55px rgba(0, 0, 0, 0.6);
+            }
+        }
+
+        .confetti {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background: #f00;
+            animation: fall 7s cubic-bezier(0.5, 0, 0.3, 1) infinite;
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+        }
+
+        .confetti.circle { border-radius: 50%; }
+        .confetti.star { clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); }
+        .confetti.heart { clip-path: polygon(50% 0%, 75% 25%, 100% 50%, 75% 75%, 50% 100%, 25% 75%, 0% 50%, 25% 25%); }
+        .confetti.diamond { clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+
+        @keyframes fall {
+            0% { transform: translateY(-100vh) translateX(0) rotate(0deg); opacity: 1; }
+            50% { transform: translateY(0) translateX(calc(120px * var(--direction))) rotate(900deg); opacity: 0.9; }
+            100% { transform: translateY(100vh) translateX(calc(250px * var(--direction))) rotate(1800deg); opacity: 0; }
+        }
+
+        .emoji {
+            font-size: 2em;
+            margin: 0 12px;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background: linear-gradient(45deg, #54a0ff, #00ddeb);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(84, 160, 255, 0.5);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        #qrCode {
+            display: none;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px;
+                margin: 20px;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            .wish {
+                font-size: 1.8em;
+                padding: 20px;
+            }
+            .subtitle {
+                font-size: 1.4em;
+            }
+            button {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow" style="top: 5%; left: 10%;"></div>
+    <div class="glow" style="top: 75%; left: 70%; animation-delay: 4s;"></div>
+    <div class="lens-flare" style="top: 20%; left: 60%;"></div>
+    <div class="star" style="top: 15%; left: 25%; animation-delay: 0.3s;"></div>
+    <div class="star" style="top: 35%; left: 75%; animation-delay: 0.8s;"></div>
+    <div class="star" style="top: 55%; left: 15%; animation-delay: 1.2s;"></div>
+    <div class="star" style="top: 75%; left: 55%; animation-delay: 1.7s;"></div>
+    <div class="star" style="top: 25%; left: 45%; animation-delay: 2.2s;"></div>
+    <div class="laser" style="left: 10%; top: -50%; animation-delay: 0s;"></div>
+    <div class="laser" style="left: 90%; top: -50%; animation-delay: 1.5s;"></div>
+    <div class="container">
+        <h1>Chúc Các Bạn Thi Cấp 3 Rực Rỡ! 🎉</h1>
+        <p class="subtitle">Các bạn ơi, kỳ thi quan trọng đã đến! Hãy tự tin, bình tĩnh và bùng nổ nhé!</p>
+        <p class="wish">Chúc các bạn tự tin, làm bài xuất sắc và đạt điểm cao như mong ước! 💪✨</p>
+        <div class="controls">
+            <button onclick="toggleMusic()">🎵 Bật/Tắt Nhạc</button>
+            <button onclick="shareWish()">📲 Chia sẻ Lời Chúc</button>
+        </div>
+        <div id="qrCode"></div>
+    </div>
+
+    <script>
+        // Tạo hiệu ứng pháo hoa
+        function createConfetti() {
+            const colors = ['#ff3e4d', '#ff9f43', '#54a0ff', '#00ddeb', '#ff9ff3', '#6ab04c', '#feca57', '#e056fd', '#ffbe76', '#4ecdc4'];
+            const shapes = ['circle', 'star', 'heart', 'diamond'];
+            for (let i = 0; i < 300; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti ' + shapes[Math.floor(Math.random() * shapes.length)];
+                confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.width = Math.random() * 14 + 8 + 'px';
+                confetti.style.height = confetti.style.width;
+                confetti.style.animationDelay = Math.random() * 6 + 's';
+                confetti.style.animationDuration = Math.random() * 4 + 4 + 's';
+                confetti.style.setProperty('--direction', Math.random() > 0.5 ? 1 : -1);
+                document.body.appendChild(confetti);
+            }
+        }
+
+        // Tạo hiệu ứng tuyết rơi
+        function createSnow() {
+            for (let i = 0; i < 100; i++) {
+                const snow = document.createElement('div');
+                snow.className = 'snow';
+                snow.style.left = Math.random() * 100 + 'vw';
+                snow.style.animationDelay = Math.random() * 10 + 's';
+                snow.style.animationDuration = Math.random() * 8 + 8 + 's';
+                document.body.appendChild(snow);
+            }
+        }
+
+        // Danh sách lời chúc ý nghĩa
+        const wishes = [
+            "Chúc các bạn bình tĩnh, tự tin và làm bài xuất sắc trong kỳ thi cấp 3! 🌟",
+            "Hãy tỏa sáng như ngôi sao, các bạn sẽ làm được mọi thứ! Chúc thi tốt! ✨",
+            "Cố lên nhé! Kỳ thi này là bước ngoặt, và các bạn sẽ vượt qua rực rỡ! 🚀",
+            "Chúc các bạn giữ vững tinh thần, làm bài chắc tay, điểm cao ngất ngưởng! 💪",
+            "Mọi nỗ lực của các bạn sẽ được đền đáp. Chúc thi thật tốt và thành công! 🎉",
+            "Hít thở sâu, tập trung cao độ, các bạn sẽ chinh phục kỳ thi này! 🌈",
+            "Chúc các bạn may mắn, đề dễ, và đạt kết quả như ý trong kỳ thi! 🥳",
+            "Các bạn là những chiến binh tuyệt vời, hãy tự tin bước vào phòng thi! ⚡",
+            "Kỳ thi này là cơ hội để các bạn tỏa sáng. Chúc các bạn làm bài siêu tốt! 🌟",
+            "Chúc các bạn giữ được bình tĩnh, làm bài chính xác và đạt điểm cao nhé! 📚",
+            "Hãy tin vào bản thân, các bạn đã chuẩn bị rất tốt! Chúc thi thành công! 💖",
+            "Chúc các bạn vững vàng tâm lý, làm bài trơn tru và đạt kết quả mỹ mãn! 🌺",
+            "Các bạn là những người tuyệt vời, hãy để kỳ thi này chứng minh điều đó! 🚀",
+            "Chúc các bạn gặp nhiều may mắn, làm bài trơn tru và đạt điểm thật cao! 🌟",
+            "Hãy mỉm cười và tự tin, kỳ thi này sẽ là kỷ niệm đẹp của các bạn! 😊",
+            "Chúc các bạn biến áp lực thành động lực, làm bài xuất sắc và thành công lớn! 💥",
+            "Hãy để kỳ thi này là nơi các bạn tỏa sáng tài năng của mình! Chúc thi tốt! 🌟",
+            "Chúc các bạn giữ tâm thế vững vàng, làm bài chính xác, và đạt điểm tuyệt vời! 🎈",
+            "Các bạn đã nỗ lực rất nhiều, giờ là lúc tỏa sáng! Chúc thi thành công! ✨",
+            "Chúc các bạn tự tin, mạnh mẽ, và đạt kết quả rực rỡ trong kỳ thi này! 🚀"
+        ];
+
+        // Thay đổi lời chúc tự động
+        function changeWish() {
+            const wishElement = document.querySelector('.wish');
+            const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
+            wishElement.style.opacity = 0;
+            wishElement.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                wishElement.textContent = randomWish;
+                wishElement.style.opacity = 1;
+                wishElement.style.transform = 'translateY(0)';
+            }, 800);
+        }
+
+        // Tự động thay đổi lời chúc mỗi 5 giây
+        setInterval(changeWish, 5000);
+
+        // Tạo QR code và chia sẻ
+        function shareWish() {
+            const url = window.location.href;
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(() => alert('Đã sao chép link!'));
+            }
+            const qrCodeContainer = document.getElementById('qrCode');
+            qrCodeContainer.innerHTML = '';
+            new QRCode(qrCodeContainer, url);
+            qrCodeContainer.style.display = 'block';
+        }
+
+        // Âm thanh
+        let audio = new Audio('music.mp3'); // Thay 'music.mp3' bằng tên file nhạc bạn upload
+        let isPlaying = false;
+        function toggleMusic() {
+            if (isPlaying) {
+                audio.pause();
+                isPlaying = false;
+            } else {
+                audio.loop = true;
+                audio.play().catch(error => {
+                    alert('Vui lòng nhấp vào trang để cho phép phát nhạc!');
+                });
+                isPlaying = true;
+            }
+        }
+
+        // Gọi hàm khi trang tải
+        window.onload = () => {
+            createConfetti();
+            createSnow();
+            changeWish();
+            // Tạo laser
+            for (let i = 0; i < 4; i++) {
+                const laser = document.createElement('div');
+                laser.className = 'laser';
+                laser.style.left = (i * 25) + '%';
+                laser.style.animationDelay = (i * 0.5) + 's';
+                document.body.appendChild(laser);
+            }
+            // Tự động phát nhạc khi trang tải
+            audio.loop = true;
+            audio.play().catch(error => {
+                alert('Vui lòng nhấp vào trang để cho phép phát nhạc do chính sách trình duyệt!');
+            });
+            isPlaying = true;
+        };
+    </script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</body>
+</html>
